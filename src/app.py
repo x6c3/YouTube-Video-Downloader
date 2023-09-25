@@ -2,6 +2,9 @@ from flask import Flask, render_template, request
 from pytube import YouTube
 
 app = Flask(__name__)
+@app.route("/")
+def thing():
+    return '<a href="/home">Click here lmao</a>'
 
 @app.route("/home")
 def home():
