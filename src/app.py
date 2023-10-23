@@ -10,7 +10,7 @@ def thing():
 def home():
     return render_template('index.html')
 
-@app.route('/download', methods=['POST'])
+@app.route('/download', methods=['POST'])  # type: ignore
 
 def download():
     if request.method == 'POST':
